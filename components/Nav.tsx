@@ -13,15 +13,34 @@ const links = [
 
 interface NavProps {
   containerStyles: string;
+  underlineStyles?: string;
+  linkStyles: string;
 }
 
-const Nav: FC<NavProps> = ({ containerStyles }) => {
+const Nav: FC<NavProps> = ({
+  containerStyles,
+  underlineStyles,
+  linkStyles,
+}) => {
   const path = usePathname();
   return (
     <nav className={`${containerStyles}`}>
       {links.map((link, index) => {
         return (
-          <Link href={link.path} key={index}>
+          <Link
+            href={link.path}
+            key={index}
+            className={`uppercase ${linkStyles}`}
+          >
+            {link.path === path && (
+              <motion.span
+                initial={{ y: "-100%" }}
+                animate={{ y: "0" }}
+                transition={{ type: "tween" }}
+                layoutId="underline"
+                className={`${underlineStyles}`}
+              />
+            )}
             {link.name}
           </Link>
         );

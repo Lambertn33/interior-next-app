@@ -10,7 +10,7 @@ const ThemeToggler = () => {
     <div className="flex">
       <div
         onClick={handleSetTheme}
-        className="flex bg-primary gap-x-4 dark:bg-light px-4 rounded-md py-2"
+        className="flex cursor-pointer bg-primary gap-x-4 dark:bg-light px-4 rounded-md py-2"
       >
         <SunIcon
           className="h-[1.2rem] w-[1.2rem] dark:scale-0 scale:100"
