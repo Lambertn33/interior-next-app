@@ -92,7 +92,7 @@ const Gallery = () => {
         </div>
         <div>
           <img
-            src="/images/gallery3.jpg"
+            src="/images/gallery.jpg"
             className="h-auto max-w-full rounded-lg hover:scale-90 transition-all"
             alt=""
           />
