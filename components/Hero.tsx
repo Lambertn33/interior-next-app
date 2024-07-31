@@ -9,7 +9,7 @@ import { desVariants, titleVariants, tagVariants } from "@/utils/animation";
 
 const Hero = () => {
   return (
-    <div className="container py-12 xl:py-24 h-[auto] text-center lg:py-0 lg:text-left lg:flex lg:justify-between">
+    <div className="container py-12 xl:py-24 h-[auto] text-center lg:py-0 lg:text-left lg:flex lg:justify-between gap-x-8">
       {/* Left section */}
       <div className="lg:w-1/2 xl:py-14 lg:py-8">
         <motion.p
@@ -32,7 +32,7 @@ const Hero = () => {
           initial="offscreen"
           whileInView={"onscreen"}
           variants={tagVariants}
-          className="pb-6 xl:pb-10"
+          className="pb-6 xl:pb-10 text-justify"
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, omnis.
           Odio vero maiores quis ea dolore id, eum qui rerum doloribus ducimus
