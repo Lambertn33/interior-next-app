@@ -66,7 +66,7 @@ const posts = [
 
 const ContactSection = () => {
   return (
-    <div className="pt-12">
+    <div className="pt-12 container">
       <div className="mx-auto max-w-7xl">
         <motion.h2
           initial="offscreen"
