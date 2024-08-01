@@ -18,6 +18,7 @@ const CompanySectionBadge: FC<CompanySectionBadgeProps> = ({
 }) => {
   return (
     <motion.div
+      data-cy="home-company-card"
       initial="offscreen"
       whileInView={"onscreen"}
       variants={titleVariants}

@@ -21,6 +21,7 @@ const Hero = () => {
           Best interior offering
         </motion.p>
         <motion.h1
+          data-cy="home-title"
           className="h1"
           initial="offscreen"
           whileInView={"onscreen"}

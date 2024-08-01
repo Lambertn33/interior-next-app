@@ -39,7 +39,11 @@ const CatalogueSection = () => {
   return (
     <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 lg:gap-0 divide-gray-300 lg:divide-x">
       {items.map((item) => (
-        <div key={item.id} className="relative overflow-hidden group">
+        <div
+          key={item.id}
+          className="relative overflow-hidden group"
+          data-cy="home-catalogue-card"
+        >
           <div>
             <Image
               src={item.image}

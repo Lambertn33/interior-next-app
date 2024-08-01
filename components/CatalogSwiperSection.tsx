@@ -60,7 +60,7 @@ const CatalogSwiperSection = () => {
           </p>
         </motion.div>
 
-        <Link href="/gallery">
+        <Link href="/gallery" data-cy="home-gallery-link">
           <Button className="inline-flex items-center px-8 py-3 mt-4 text-white rounded-full shadow-lg hover:bg-gray-800 hover:ring-2 hover:ring-gray-950 ring-offset-2">
             View Gallery
             <TbArrowUpRight className="w-5 h-5 ml-2" />
