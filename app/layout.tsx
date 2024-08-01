@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
+    <html lang="en" suppressHydrationWarning={true} data-cy="main-html">
       <body className={sen.className}>
         <ThemeProvider defaultTheme="system" enableSystem attribute="class">
           <Wrapper>
